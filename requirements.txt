@@ -1,0 +1,20 @@
+# ── 웹 UI ──
+streamlit>=1.39        # st.audio_input(마이크 녹음) 필요 버전
+plotly>=5.20
+pandas>=2.0
+
+# ── 음성 ──
+faster-whisper>=1.0    # STT (첫 실행 시 모델 자동 다운로드)
+edge-tts>=6.1          # TTS (인터넷 필요)
+soundfile>=0.12
+librosa>=0.10
+numpy>=1.26
+scipy>=1.11
+
+# ── DB ──
+psycopg[binary]>=3.1
+python-dotenv>=1.0
+
+# ── 테스트 ──
+pytest>=8.0
+jiwer>=3.0             # WER 교차 검증용 (직접 구현과 비교)
